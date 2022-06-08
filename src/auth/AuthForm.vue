@@ -7,13 +7,10 @@
     <p>Пароль</p>
     <input type="text" />
   </div>
-  <button class="auth_wrapper-button">Войти</button>
 </template>
 
 <script>
-export default {
-  name: 'AuthForm',
-}
+export default {}
 </script>
 
 <style lang="scss">
@@ -35,13 +32,5 @@ export default {
   input:focus {
     outline: none;
   }
-}
-.auth_wrapper-button {
-  align-self: flex-end;
-  background: #6366f1;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
 }
 </style>

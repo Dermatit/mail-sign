@@ -1,16 +1,16 @@
-<script>
-import AuthComponent from './components/Auth.vue'
-export default {
-  name: 'App',
-  components: {
-    AuthComponent,
-  },
-}
-</script>
-
 <template>
-  <AuthComponent />
+  <router-view />
+  <!-- <AuthSection /> -->
 </template>
+
+<script>
+// import AuthSection from './components/AuthSection.vue'
+// export default {
+//   components: {
+//     AuthSection,
+//   },
+// }
+</script>
 
 <style>
 body,

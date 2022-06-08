@@ -2,11 +2,13 @@
   <form class="auth">
     <div class="auth__wrapper">
       <div class="auth__logo">
-        <img src="../assets/Vector-1.svg" />
-        <img src="../assets/Vector.svg" />
+        <img src="../assets/penLogo.svg" />
       </div>
       <h1>Авторизация ✨</h1>
       <AuthFormVue />
+      <button class="auth_wrapper-button" @click.prevent @click="toggleAuth">
+        Войти
+      </button>
     </div>
   </form>
   <img class="auth__image" src="../assets/image.png" />
@@ -15,9 +17,13 @@
 <script>
 import AuthFormVue from './AuthForm.vue'
 export default {
-  name: 'AuthComponent',
   components: {
     AuthFormVue,
+  },
+  methods: {
+    toggleAuth() {
+      this.$router.push('/employeeList')
+    },
   },
 }
 </script>
@@ -39,6 +45,14 @@ export default {
     justify-content: space-evenly;
     width: 50%;
     height: 40%;
+    button {
+      align-self: flex-end;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+    }
   }
   h1 {
     font-family: 'Inter', sans-serif;
